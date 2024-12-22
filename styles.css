@@ -1,0 +1,72 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #557A95;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.animation-structure {
+    width: 300px;
+    padding: 20px;
+    background-color: #A0C4FF;
+    border: 5px solid #394867;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.dots div {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}
+
+.svg-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.animated-svg {
+    width: 100%;
+    max-width: 200px;
+    animation: float 5s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
